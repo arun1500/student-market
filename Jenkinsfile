@@ -16,10 +16,11 @@ pipeline {
         stage('Checkout Source Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/yourusername/student-market-app.git'
+                    url: 'https://github.com/arun1500/student-market'
             }
         }
 
+  
         stage('Build Application') {
             steps {
                 sh 'mvn clean package'
